@@ -33,8 +33,9 @@ const Registration = () => {
           }
           return errors;
         }}
-        onSubmit={(values) => {
+        onSubmit={(values, { resetForm }) => {
           console.log(values);
+          resetForm();
         }}
       >
         {({
@@ -70,7 +71,7 @@ const Registration = () => {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.password}
-                border={touched.password && errors.password && "1px solid red"}
+                // border={touched.password && errors.password && "1px solid red"}
                 type="password"
                 name="password"
                 placeholder="Password"

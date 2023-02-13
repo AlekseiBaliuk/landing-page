@@ -47,12 +47,20 @@ export const Decor = styled.span`
 
 export const HeaderCard = styled.div`
   position: relative;
-  bottom: 240px;
+  bottom: 320px;
   left: 400px;
   width: 300px;
-  height: 300px;
+  height: 180px;
+  overflow: scroll;
 
   color: #fff;
+
+  & + button {
+    position: absolute;
+    top: 470px;
+    left: 485px;
+    z-index: 10;
+  }
 `;
 
 export const Title = styled.h1`
@@ -63,14 +71,4 @@ export const Title = styled.h1`
 
 export const Text = styled.p`
   margin-bottom: 40px;
-`;
-
-export const Button = styled.button`
-  width: 140px;
-  background-color: #f5e320;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  margin-top: 20px;
 `;

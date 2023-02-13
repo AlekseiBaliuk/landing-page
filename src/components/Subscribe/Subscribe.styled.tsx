@@ -16,12 +16,3 @@ export const Input = styled.input`
   border-radius: 50px;
   outline: none;
 `;
-
-export const Button = styled.button`
-  width: 140px;
-  background-color: #f5e320;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-`;

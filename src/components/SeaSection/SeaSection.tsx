@@ -4,6 +4,7 @@ import * as SC from "./SeaSection.styled";
 
 import island from "../../assets/island.jpg";
 import { useState } from "react";
+import { Button } from "../Button/Button";
 
 export const SeaSection = () => {
   const [isReadMore, setIsReadMore] = useState(true);
@@ -41,9 +42,9 @@ export const SeaSection = () => {
           {isReadMore ? text.slice(0, 400) + "..." : text}
         </SC.Description>
 
-        <SC.Button type="button" onClick={toggleReadMore}>
+        <Button type="button" onClick={toggleReadMore}>
           {isReadMore ? "Read More" : "Read Less"}
-        </SC.Button>
+        </Button>
       </div>
     </SC.Wrapper>
   );

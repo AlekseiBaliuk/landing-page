@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "../Button/Button";
 import * as SC from "./Subscribe.styled";
 
 export const Subscribe = () => {
@@ -17,9 +18,10 @@ export const Subscribe = () => {
         onChange={(e) => setEmail(e.currentTarget.value)}
         value={email}
       />
-      <SC.Button type="button" onClick={handleSubscribe}>
+
+      <Button type="button" onClick={handleSubscribe}>
         Subscribe
-      </SC.Button>
+      </Button>
     </SC.Wrapper>
   );
 };

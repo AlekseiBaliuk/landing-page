@@ -4,6 +4,7 @@ import * as SC from "./MountainSection.styled";
 import mountain1 from "../../assets/mountain-1.jpg";
 import mountain2 from "../../assets/mountain-2.jpg";
 import mountain3 from "../../assets/mountain-3.jpg";
+import { Button } from "../Button/Button";
 
 export const MountainSection = () => {
   const [isReadMore, setIsReadMore] = useState(true);
@@ -41,9 +42,9 @@ export const MountainSection = () => {
             {isReadMore ? text.slice(0, 400) + "..." : text}
           </SC.Description>
 
-          <SC.Button type="button" onClick={toggleReadMore}>
+          <Button type="button" onClick={toggleReadMore}>
             {isReadMore ? "Read More" : "Read Less"}
-          </SC.Button>
+          </Button>
         </div>
         <SC.Img src={mountain1} alt="mountain" />
       </SC.CardWrapper>
@@ -56,9 +57,9 @@ export const MountainSection = () => {
             {isReadMore ? text.slice(0, 400) + "..." : text}
           </SC.Description>
 
-          <SC.Button type="button" onClick={toggleReadMore}>
+          <Button type="button" onClick={toggleReadMore}>
             {isReadMore ? "Read More" : "Read Less"}
-          </SC.Button>
+          </Button>
         </div>
         <SC.Img src={mountain2} alt="mountain" />
       </SC.CardWrapper>
@@ -71,9 +72,9 @@ export const MountainSection = () => {
             {isReadMore ? text.slice(0, 400) + "..." : text}
           </SC.Description>
 
-          <SC.Button type="button" onClick={toggleReadMore}>
+          <Button type="button" onClick={toggleReadMore}>
             {isReadMore ? "Read More" : "Read Less"}
-          </SC.Button>
+          </Button>
         </div>
         <SC.Img src={mountain3} alt="mountain" />
       </SC.CardWrapper>

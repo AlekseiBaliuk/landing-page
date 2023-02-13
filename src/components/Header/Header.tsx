@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "../Button/Button";
 import { HeaderNav } from "../HeaderNav/HeaderNav";
 import * as SC from "./Header.styled";
 
@@ -26,10 +27,10 @@ export const Header = () => {
       <SC.HeaderCard>
         <SC.Title>This is Title</SC.Title>
         <SC.Text>{isReadMore ? text.slice(0, 100) + "..." : text}</SC.Text>
-        <SC.Button type="button" onClick={toggleReadMore}>
-          {isReadMore ? "Read More" : "Read Less"}
-        </SC.Button>
       </SC.HeaderCard>
+      <Button type="button" onClick={toggleReadMore}>
+        {isReadMore ? "Read More" : "Read Less"}
+      </Button>
     </SC.Header>
   );
 };
